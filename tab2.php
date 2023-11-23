@@ -123,11 +123,11 @@
 );
 echo"<table class=\"table table-bordered table-striped text-center\"><tr><td>Capitales</td><td>Pays</td></tr>";
 asort($capitales);
-foreach ($capitales as $villes =>$pays)
-{echo"<tr><td>$pays</td><td>$villes</td></tr>";
+foreach ($capitales as $villes =>$pays){
+    $pl= substr($villes,0,1);
+    if($pl=="B"){echo"<tr><td>$villes</td><td>$pays</td></tr>";
 };
-$n=count($capitales);
-echo "<tr><tr><td>Nombre de pays</td><td>$n</td></tr>";
+};
 echo "</table>";
 echo "<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\" crossorigin=\"anonymous\"></script>"
 ?> 

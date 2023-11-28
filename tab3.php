@@ -19,7 +19,7 @@ $departements = array(
     "Normandie" => array("Calvados", "Eure", "Manche", "Orne", "Seine-Maritime")
 
 );
-echo"<table class=\"table table-bordered table-striped text-center\"><tr><td>Regions</td><td>Départements</td></tr>";
+echo"<table class=\"table table-bordered table-striped text-center\"><tr><th>Regions</th><th>Départements</th></tr>";
 foreach ($departements as $region =>$departementsList)
 { 
     sort($departementsList);

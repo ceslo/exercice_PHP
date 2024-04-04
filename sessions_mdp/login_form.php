@@ -7,7 +7,7 @@
 </head>
 <body>
 <p>Connexion:</p>
-    <form action="sessions_mdp/login_script.php" method="post" name="user" id="user">
+    <form action="login_script.php" method="post" name="user" id="user">
   
         <label for="login">Votre email</label>
             <input type="text" name="login" id="login">
